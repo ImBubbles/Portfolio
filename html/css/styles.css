@@ -2,14 +2,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Noto Sans Kannada UI Medium", Serif;
-    /*background: #d8d7d5;*/
-    /*background-image: url("../images/background.webp");*/
+    font-family: 'Lucida Console', 'Courier New', monospace;
 }
-
-/*
-USE: https://www.canva.com/colors/color-palettes/makeshift-slumber/
- */
 
 .spacer {
     -webkit-background-clip: text;
@@ -60,7 +54,7 @@ USE: https://www.canva.com/colors/color-palettes/makeshift-slumber/
 }
 
 .navbar__link:hover {
-    font-size: 1.6REM; /* Slightly increase size */
+    font-size: 1.6rem;
     opacity: 75%;
     text-decoration-line: underline;
 }
@@ -69,7 +63,7 @@ USE: https://www.canva.com/colors/color-palettes/makeshift-slumber/
     display: flex;
     align-items: center;
     font-weight: bold;
-    font-size: 2REM;
+    font-size: 2rem;
     margin-left: 50px;
     color: #f8efe4;
     background: #050606;
@@ -81,7 +75,7 @@ USE: https://www.canva.com/colors/color-palettes/makeshift-slumber/
     text-decoration: none;
     align-items: center;
     font-weight: bold;
-    font-size: 2REM;
+    font-size: 2rem;
 }
 
 #navbar__title__img {
@@ -95,6 +89,7 @@ USE: https://www.canva.com/colors/color-palettes/makeshift-slumber/
     flex-direction: column;
     align-items: center;
     padding: 2rem;
+    gap: 1rem;
 }
 
 .page__section {
@@ -102,27 +97,25 @@ USE: https://www.canva.com/colors/color-palettes/makeshift-slumber/
     flex-direction: column;
     align-items: center;
     padding: 2rem;
-    max-width: 600px;
+    max-width: 800px;
     width: 100%;
     border-radius: 15px;
+    gap: 10px;
     /*background-color: #f4f7fa; light contrasting card */
     background-color: #087dfb; /* light contrasting card */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    border: none;
 }
 
-#socials__header {
+.section__header {
     font-size: 2rem;
     font-weight: bold;
     color: #050606;
-    margin-bottom: 1rem;
     text-shadow: none;
 }
 
 #self__image {
     border-radius: 50%;
     border: 4px solid #0d1b2a; /* dark accent to match navbar */
-    margin-bottom: 1rem;
     max-width: 200px;
 }
 
@@ -130,7 +123,6 @@ USE: https://www.canva.com/colors/color-palettes/makeshift-slumber/
     display: flex;
     list-style: none;
     gap: 1rem;
-    margin-bottom: 2rem;
 }
 
 .socials__image {
@@ -144,12 +136,11 @@ USE: https://www.canva.com/colors/color-palettes/makeshift-slumber/
 
 .resume__list {
     display: flex;
-    gap: 0.5rem;
     align-items: center;
     list-style: none;
     border-radius: 10px;
     margin: auto;
-    padding: 2% 1%;
+    padding: 2% 2%;
     background: #f4f7fa;
     border-radius: 15px;
     border: 2px solid #000;
@@ -169,4 +160,34 @@ USE: https://www.canva.com/colors/color-palettes/makeshift-slumber/
     margin: 1px 1px;
     height: 50px;
     -webkit-background-clip: text;
+}
+
+.about__list {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    list-style: none;
+    gap: 2rem;
+}
+
+.about__header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #050606;
+    text-shadow: none;
+}
+
+.about__paragraph {
+    margin-left: 1rem;
+}
+
+.about__link {
+    text-decoration: underline;
+    font-size: 1.1rem;
+    color: #050606;
+}
+
+.about__link:hover {
+    text-decoration: none;
+    color: #f8efe4;
 }
