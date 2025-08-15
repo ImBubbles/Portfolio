@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hayden Holmes Portfolio</title>
     <link rel="icon" href="images/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/styles.css?v=2">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <nav class="navbar">
+    <nav id="navbar">
         <div class="navbar__title__container">
             <img src="../images/logo.png" alt="LinkedIn" id="navbar__title__img">
             <h1 id="navbar__title">/hayden/portfolio</h1>
@@ -27,72 +27,76 @@
             </ul>
         </div>
     </nav>
-    <div class="sections__container">
-        <section class="page__section">
-            <h1 class="section__header">/hayden_holmes</h1>
+    <canvas id="particleCanvas"></canvas>
+    <div class="container">
+        <div class="sections__container">
+            <section class="page__section">
+                <h1 class="section__header">/hayden_holmes</h1>
 
-            <img src="../images/self.jpeg" alt="Profile picture" id="self__image">
+                <img src="../images/self.jpeg" alt="Profile picture" id="self__image">
 
-            <ul class="socials__list">
-                <li class="socials__item">
-                    <a href="https://linkedin.com/in/haydenmholmes/" target="_blank" class="socials__link">
-                        <img src="../images/linkedin.webp" alt="LinkedIn" class="socials__image">
-                    </a>
-                </li>
-                <li class="socials__item">
-                    <a href="https://github.com/ImBubbles/" target="_blank" class="socials__link">
-                        <img src="../images/github.webp" alt="GitHub" class="socials__image">
-                    </a>
-                </li>
-                <li class="socials__item">
-                    <a href="https://www.spigotmc.org/members/ibubbles.662379/#resources" target="_blank" class="socials__link">
-                        <img src="../images/spigot.png" alt="Spigot" class="socials__image">
-                    </a>
-                </li>
-            </ul>
+                <ul class="socials__list">
+                    <li class="socials__item">
+                        <a href="https://linkedin.com/in/haydenmholmes/" target="_blank" class="socials__link">
+                            <img src="../images/linkedin.webp" alt="LinkedIn" class="socials__image">
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a href="https://github.com/ImBubbles/" target="_blank" class="socials__link">
+                            <img src="../images/github.webp" alt="GitHub" class="socials__image">
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a href="https://www.spigotmc.org/members/ibubbles.662379/#resources" target="_blank" class="socials__link">
+                            <img src="../images/spigot.png" alt="Spigot" class="socials__image">
+                        </a>
+                    </li>
+                </ul>
 
-            <ul class="resume__list">
-                <li class="resume__item">
-                    <img src="../images/pdf.webp" alt="PDF icon" id="resume__image">
-                </li>
-                <li class="resume__item">
-                    <a href="../files/resume.pdf" target="_blank" id="resume__download">Resume</a>
-                </li>
-            </ul>
-        </section>
-        <section class="page__section">
-            <h1 class="section__header">/about_me</h1>
-            <ul class="about__list">
-                <li class="about__item">
-                    <h1 class="about__header">General background</h1>
-                    <p class="about__paragraph">I'm an 18 year old developer coming into my first year of college at UCO studying software engineering.</p>
-                </li>
-                <li class="about__item">
-                    <h1 class="about__header">Development background</h1>
-                    <p class="about__paragraph">I've been coding in Java since I was 13. Most of it has been Minecraft server plugins through the use of
-                        <a href="https://www.spigotmc.org/" target="_blank" class="about__link">Spigot-API</a> and partially
-                        <a href="https://papermc.io/" target="_blank", class="about__link">Paper-API</a>.
-                        In that time I have published numerous projects on both
-                        <a href="https://www.spigotmc.org/members/ibubbles.662379/#resources" target="_blank" class="about__link">Spigot</a> and
-                        <a href="https://github.com/ImBubbles?tab=repositories" target="_blank" class="about__link">GitHub</a>.
-                        Since then, I have started branching out into other languages such as HTML/CSS, JavaScript, and C++.
-                    </p>
-                </li>
-                <li class="about__item">
-                    <h1 class="about__header">Soft Skills</h1>
-                    <p class="about__paragraph">Communication, Problem-Solving, Teamwork, Adaptibility, Creativity, Resourcefulness, Time Management, and Project Management</p>
-                </li>
-                <li class="about__item">
-                    <h1 class="about__header">Hard Skills</h1>
-                    <p class="about__paragraph">
-                        Gmail, Word, Excel, PowerPoint, Google Docs,
-                        Network Management, Hardware Management, Data Management, Java, C++,
-                        HTML, CSS, JavaScript, HTTP, CMake, JSON, MongoDB, MariaDB, MySQL, SQLite,
-                        GitHub Desktop, GitHub, IntelliJ, CLion, Linux, Arch-Linux, Ubuntu-Linux
-                    </p>
-                </li>
-            </ul>
-        </section>
+                <ul class="resume__list">
+                    <li class="resume__item">
+                        <img src="../images/pdf.webp" alt="PDF icon" id="resume__image">
+                    </li>
+                    <li class="resume__item">
+                        <a href="../files/resume.pdf" target="_blank" id="resume__download">Resume</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="page__section">
+                <h1 class="section__header">/about_me</h1>
+                <ul class="about__list">
+                    <li class="about__item">
+                        <h1 class="about__header">General background</h1>
+                        <p class="about__paragraph">I'm an 18 year old developer coming into my first year of college at UCO studying software engineering.</p>
+                    </li>
+                    <li class="about__item">
+                        <h1 class="about__header">Development background</h1>
+                        <p class="about__paragraph">I've been coding in Java since I was 13. Most of it has been Minecraft server plugins through the use of
+                            <a href="https://www.spigotmc.org/" target="_blank" class="about__link">Spigot-API</a> and partially
+                            <a href="https://papermc.io/" target="_blank", class="about__link">Paper-API</a>.
+                            In that time I have published numerous projects on both
+                            <a href="https://www.spigotmc.org/members/ibubbles.662379/#resources" target="_blank" class="about__link">Spigot</a> and
+                            <a href="https://github.com/ImBubbles?tab=repositories" target="_blank" class="about__link">GitHub</a>.
+                            Since then, I have started branching out into other languages such as HTML/CSS, JavaScript, and C++.
+                        </p>
+                    </li>
+                    <li class="about__item">
+                        <h1 class="about__header">Soft Skills</h1>
+                        <p class="about__paragraph">Communication, Problem-Solving, Teamwork, Adaptibility, Creativity, Resourcefulness, Time Management, and Project Management</p>
+                    </li>
+                    <li class="about__item">
+                        <h1 class="about__header">Hard Skills</h1>
+                        <p class="about__paragraph">
+                            Gmail, Word, Excel, PowerPoint, Google Docs,
+                            Network Management, Hardware Management, Data Management, Java, C++,
+                            HTML, CSS, JavaScript, HTTP, CMake, JSON, MongoDB, MariaDB, MySQL, SQLite,
+                            GitHub Desktop, GitHub, IntelliJ, CLion, Linux, Arch-Linux, Ubuntu-Linux
+                        </p>
+                    </li>
+                </ul>
+            </section>
+        </div>
     </div>
+    <script src="scripts/particles.js"></script>
 </body>
 </html>

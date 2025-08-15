@@ -10,7 +10,7 @@
     padding: 0 5px;
 }
 
-.navbar {
+#navbar {
     background: #050606;
     height: 65px;
     display: flex;
@@ -85,6 +85,7 @@
 }
 
 .sections__container {
+    z-index: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -138,7 +139,6 @@
     display: flex;
     align-items: center;
     list-style: none;
-    border-radius: 10px;
     margin: auto;
     padding: 2% 2%;
     background: #f4f7fa;
@@ -190,4 +190,10 @@
 .about__link:hover {
     text-decoration: none;
     color: #f8efe4;
+}
+
+#particleCanvas {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
 }
