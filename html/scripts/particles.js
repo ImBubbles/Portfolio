@@ -5,10 +5,8 @@ canvas.width = window.innerWidth;
 
 window.addEventListener('resize', () => {
     canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+    canvas.height = document.body.scrollHeight;
 });
-
-//const navbar = document.getElementById('navbar');
 
 const dirMax = 1;
 const dirMin = 1;
