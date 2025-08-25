@@ -84,6 +84,33 @@
     background: #050606;
 }
 
+@media (max-width: 768px) {
+    #navbar {
+        width: 100%;
+    }
+    .navbar__container {
+        transform: scale(0.6);
+        transform-origin: center;
+    }
+    .navbar__title__container {
+        display: flex;
+        gap: 0;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+    .navbar__container {
+        display: flex;
+        margin-left: 5px;
+    }
+    #navbar {
+        flex-direction: column;
+        display: flex;
+        justify-content: left;
+        justify-items: center;
+    }
+}
+
 .sections__container {
     z-index: 1;
     display: flex;
