@@ -1,0 +1,14 @@
+# Logs
+logs
+*.log
+
+# Local env files
+.env
+.env.*
+!.env.example
+pullLatest.sh
+CPP-HTTP
+
+# IDE
+.vscode
+.idea

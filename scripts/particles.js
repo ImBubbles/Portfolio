@@ -3,11 +3,6 @@ const ctx = canvas.getContext('2d');
 canvas.height = document.body.scrollHeight;
 canvas.width = window.innerWidth;
 
-window.addEventListener('resize', () => {
-    canvas.width = window.innerWidth;
-    canvas.height = document.body.scrollHeight;
-});
-
 const dirMax = 1;
 const dirMin = 1;
 const sizeMax = 2;
@@ -163,3 +158,9 @@ function animate() {
 
 init();
 animate();
+
+window.addEventListener('resize', () => {
+    canvas.width = window.innerWidth;
+    canvas.height = document.body.scrollHeight;
+    init();
+});

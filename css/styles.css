@@ -162,18 +162,28 @@
     transform: scale(1.1);
 }
 
+#resume__big__click {
+    display: inline-block;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+}
+
+#resume__big__click:hover {
+    transform: scale(1.05);
+}
+
 .resume__list {
     display: flex;
     align-items: center;
     list-style: none;
-    margin: auto;
-    padding: 2% 2%;
+    margin: 0;
+    padding: 12px 16px;
     background: #f4f7fa;
     border-radius: 15px;
     border: 2px solid #000;
 }
 
-#resume__download {
+#resume__text {
     font-weight: bold;
     border: none;
     color: #081117;
