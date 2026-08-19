@@ -1,0 +1,20 @@
+[
+  {
+    "name": "MyMixer",
+    "tools": [
+      "C++",
+      "Linux"
+    ],
+    "description": "goon",
+    "github": "https://github.com/ImBubbles/MyMixer"
+  },
+  {
+    "name": "Project 2",
+    "tools": [
+      "C++",
+      "Linux"
+    ],
+    "github": "https://github.com/ImBubbles/MyPlugin",
+    "spigotmc": "https://www.spigotmc.org/resources/my-plugin.12345/"
+  }
+]

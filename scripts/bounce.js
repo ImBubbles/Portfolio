@@ -64,5 +64,5 @@ function bounceTitle() {
     }
 
     animate();
-    setInterval(animate, 5000);
+    setInterval(animate, 4000);
 }
