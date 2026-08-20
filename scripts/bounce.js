@@ -1,14 +1,3 @@
-// I know it's spelled expand, but it's a play on words chill
-const title = document.getElementById('navbar__title');
-
-exspand(title);
-
-const titleLetters = [...title.querySelectorAll('span')];
-
-hoverBounce(titleLetters);
-
-bounceTitle();
-
 // Might not work for spaces
 function exspand(text) {
     text.innerHTML = [...text.textContent]
@@ -50,7 +39,7 @@ function unbounce(letters, index) {
     }
 }
 
-function bounceTitle() {
+function bounceTitle(titleLetters) {
     function animate() {
         for (let index = 0; index < titleLetters.length; index++) {
             setTimeout(() => {

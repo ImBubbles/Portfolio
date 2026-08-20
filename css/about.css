@@ -1,0 +1,29 @@
+.about__list {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 2rem;
+    width: 100%
+}
+
+.about__header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #050606;
+    text-shadow: none;
+}
+
+.about__paragraph {
+    margin-left: 1rem;
+}
+
+.about__link {
+    text-decoration: underline;
+    font-size: 1.1rem;
+    color: #050606;
+}
+
+.about__link:hover {
+    text-decoration: none;
+    color: #f8efe4;
+}

@@ -1,7 +1,7 @@
-const htmlResponse = await fetch('../components/project.html');
+const htmlResponse = await fetch('/components/project.html');
 const html = await htmlResponse.text();
 
-const projectsResponse = await fetch('../files/projects.json');
+const projectsResponse = await fetch('/files/projects.json');
 const projects = await projectsResponse.json();
 
 const list = document.getElementById('projects__list');
