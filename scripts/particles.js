@@ -159,8 +159,12 @@ function animate() {
 init();
 animate();
 
-window.addEventListener('resize', () => {
+function resizeCanvas() {
     canvas.width = window.innerWidth;
     canvas.height = document.body.scrollHeight;
     init();
+}
+
+window.addEventListener('resize', () => {
+    resizeCanvas();
 });
