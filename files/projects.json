@@ -6,7 +6,7 @@
       "Linux",
       "PipeWire"
     ],
-    "description": "VoiceMeeter alternative for Linux. Uses PipeWire API to generate virtual channels for audio piping to allow multi-track recording",
+    "description": "VoiceMeeter alternative for Linux. Uses PipeWire API to generate virtual channels for audio piping to allow multi-track recording.",
     "github": "https://github.com/ImBubbles/MyMixer"
   },
   {
@@ -20,7 +20,7 @@
       "JavaScript",
       "DNS Configuration"
     ],
-    "description": "Pop-up email service including functioning website and emailing using a setup domain name (DNS)",
+    "description": "Pop-up email service including functioning website and emailing using a setup domain name (DNS),",
     "github": "https://github.com/ImBubbles/CrazyMail"
   },
   {
@@ -30,7 +30,7 @@
       "SQLite",
       "YAML"
     ],
-    "description": "Easily share location coordinates in-game and also how far away said coordinates are",
+    "description": "Easily share location coordinates in-game and also how far away said coordinates are.",
     "github": "https://github.com/ImBubbles/GeoFind",
     "spigot": "https://www.spigotmc.org/resources/geofind.101152/"
   }
