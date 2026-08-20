@@ -6,7 +6,7 @@
       "Linux",
       "PipeWire"
     ],
-    "description": "VoiceMeeter Alternative for Linux. Uses PipeWire API to generate virtual nodes for audio piping to allow multi-track recording",
+    "description": "VoiceMeeter Alternative for Linux. Uses PipeWire API to generate virtual channels for audio piping to allow multi-track recording",
     "github": "https://github.com/ImBubbles/MyMixer"
   },
   {
