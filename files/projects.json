@@ -1,0 +1,37 @@
+[
+  {
+    "name": "MyMixer",
+    "tools": [
+      "C++",
+      "Linux",
+      "PipeWire"
+    ],
+    "description": "VoiceMeeter Alternative for Linux. Uses PipeWire API to generate virtual channels for audio piping to allow multi-track recording",
+    "github": "https://github.com/ImBubbles/MyMixer"
+  },
+  {
+    "name": "CrazyMail (OSU Hackathon)",
+    "tools": [
+      "Golang",
+      "VueJS",
+      "NuxtJS",
+      "NestJS",
+      "Java",
+      "JavaScript",
+      "DNS Configuration"
+    ],
+    "description": "Pop-up email service including functioning website and emailing using a setup domain name (DNS)",
+    "github": "https://github.com/ImBubbles/CrazyMail"
+  },
+  {
+    "name": "GeoFind",
+    "tools": [
+      "Java",
+      "SQLite",
+      "YAML"
+    ],
+    "description": "Easily share location coordinates in-game and also how far away said coordinates are",
+    "github": "https://github.com/ImBubbles/GeoFind",
+    "spigot": "https://www.spigotmc.org/resources/geofind.101152/"
+  }
+]
