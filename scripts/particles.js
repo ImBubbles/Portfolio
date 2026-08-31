@@ -156,12 +156,15 @@ function animate() {
     }
 }
 
-init();
+resizeCanvas();
 animate();
 
 function resizeCanvas() {
     canvas.width = window.innerWidth;
-    canvas.height = document.body.scrollHeight;
+    const navbar = document.getElementById('navbar');
+    const navbarHeight = navbar ? navbar.offsetHeight : 0;
+    const pageHeight = Math.max(document.body.scrollHeight, window.innerHeight);
+    canvas.height = pageHeight - navbarHeight;
     init();
 }
 

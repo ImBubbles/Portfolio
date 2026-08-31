@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hayden Holmes Portfolio</title>
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/particles.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="navbar__title__container">
+            <img src="../images/logo.png" alt="HH" id="navbar__title__img">
+            <h1 id="navbar__title">/chess_club</h1>
+        </div>
+        <div class="navbar__container">
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/" class="navbar__link">/home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="mailto:nedyah07@gmail.com" target="_blank" class="navbar__link">/email</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="https://github.com/ImBubbles/Portfolio" target="_blank" class="navbar__link">/source</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <canvas id="particleCanvas"></canvas>
+    <div class="container">
+        <div class="sections__container">
+            <section class="page__section">
+                <h1 class="section__header">/leader</h1>
+
+                <img src="/images/self.jpeg" alt="Profile picture" id="self__image">
+
+                <p>I am leader of the Chess Club, Hayden Holmes. Feel free to connect with me on LinkedIn!</p>
+
+                <ul class="socials__list">
+                    <li class="socials__item">
+                        <a href="https://linkedin.com/in/haydenmholmes/" target="_blank" class="socials__link">
+                            <img src="/images/linkedin.png" alt="LinkedIn" class="socials__image">
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <hr>
+            <section class="page__section">
+                <style>
+                    table {
+                        border-collapse: collapse;
+                        width: 100%;
+                    }
+
+                    th, td {
+                        border: 1px solid;
+                        padding: 8px;
+                        text-align: left;
+                    }
+
+                    th {
+                        background-color: #0360C5;
+                    }
+
+                    td {
+                        text-align: center;
+                    }
+                </style>
+                <h1 class="section__header">/club_schedule</h1>
+                <table class="schedule__table">
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Time</th>
+                            <th>Topic</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday</td>
+                            <td>1 PM - 1:30 PM</td>
+                            <td>Teaching/Practice</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>1 PM - 3:00 PM</td>
+                            <td>Competition</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td><b><i>TBD</i></b></td>
+                            <td><b><i>TBD</i></b></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </div>
+    <script src="scripts/particles.js"></script>
+</body>
+</html>
