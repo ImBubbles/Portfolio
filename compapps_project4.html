@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hayden Holmes Portfolio</title>
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/particles.css">
+</head>
+<body>
+    <style>
+        body {
+            background: #111;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #0360C5;
+        }
+
+        td {
+            text-align: center;
+        }
+        td img {
+            max-width: 150px;
+            max-height: 200px;
+        }
+    </style>
+    <canvas id="particleCanvas"></canvas>
+    <style>
+        a {
+            color: #FFF;
+        }
+    </style>
+    <div class="container">
+        <div class="sections__container">
+            <section class="page__section">
+                <h1 class="page__title">/hayden/Counter-Strike 2</h1>
+                <h2>Trailer</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/c80dVYcL69E?si=Y_z0_YN0mXVB41zj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p>Only available on <a href="https://store.steampowered.com/app/730/CounterStrike_2/" target="_blank">steam</a></p>
+                <h2>Things different than in Counter-Strike: Global Offensive</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Counter-Strike: Global Offensive (Old)</th>
+                            <th>Counter-Strike: 2 (New)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="table__old">Static smokes</td>
+                            <td class="table__new">Dynamic smokes<br>Smokes now can be broken up by weapon tracers and explosives</td>
+                        </tr>
+                        <tr>
+                            <td class="table__old">64 Tick / 64 updates per second</td>
+                            <td class="table__new">Sub-tick<br>Now runs as fast as possible whilst using computer and server times to make the game more responsive</td>
+                        </tr>
+                        <tr>
+                            <td class="table__old">Dark and gloomy</td>
+                            <td class="table__new">Now is bright and colorful to provide high contrast</td>
+                        </tr>
+                        <tr>
+                            <td class="table__old">Uses an older physics engine from 2004</td>
+                            <td class="table__new">Uses a newer physics engine from 2015</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </div>
+    <script src="scripts/particles.js"></script>
+</body>
+</html>
