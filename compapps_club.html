@@ -10,25 +10,7 @@
     <link rel="stylesheet" href="css/particles.css">
 </head>
 <body>
-    <nav id="navbar">
-        <div class="navbar__title__container">
-            <img src="../images/logo.png" alt="HH" id="navbar__title__img">
-            <h1 id="navbar__title">/chess_club</h1>
-        </div>
-        <div class="navbar__container">
-            <ul class="navbar__menu">
-                <li class="navbar__item">
-                    <a href="/" class="navbar__link">/home</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="mailto:nedyah07@gmail.com" target="_blank" class="navbar__link">/email</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="https://github.com/ImBubbles/Portfolio" target="_blank" class="navbar__link">/source</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    <nav id="navbar" data-title="/chess_club" aria-label="Main navigation"></nav>
     <canvas id="particleCanvas"></canvas>
     <div class="container">
         <div class="sections__container">
@@ -99,6 +81,8 @@
             </section>
         </div>
     </div>
+    <script src="scripts/bounce.js"></script>
+    <script src="scripts/components.js"></script>
     <script src="scripts/particles.js"></script>
 </body>
 </html>

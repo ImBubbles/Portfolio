@@ -98,14 +98,6 @@ class Particle {
     }
 
     update() {
-
-        // KEEP WITHIN CANVAS
-        if(this.x > canvas.width || this.x < 0) {
-            this.dirX = -this.dirX;
-        }
-        if(this.y > canvas.height || this.y < 0) {
-            this.dirY = -this.dirY;
-        }
         // SLOW
         if(this.dirX > dirMax || -this.dirX > dirMax) {
             this.dirX = this.dirX < 0 ? this.dirX+1 : this.dirX-1;
@@ -116,6 +108,21 @@ class Particle {
         // MOVE
         this.x += this.dirX;
         this.y += this.dirY;
+        // KEEP THE WHOLE PARTICLE WITHIN THE CANVAS
+        if(this.x + this.size > canvas.width) {
+            this.x = canvas.width - this.size;
+            this.dirX = -Math.abs(this.dirX);
+        } else if(this.x - this.size < 0) {
+            this.x = this.size;
+            this.dirX = Math.abs(this.dirX);
+        }
+        if(this.y + this.size > canvas.height) {
+            this.y = canvas.height - this.size;
+            this.dirY = -Math.abs(this.dirY);
+        } else if(this.y - this.size < 0) {
+            this.y = this.size;
+            this.dirY = Math.abs(this.dirY);
+        }
         // DRAW
         this.drawCircle();
         this.drawToNear();
@@ -160,14 +167,31 @@ resizeCanvas();
 animate();
 
 function resizeCanvas() {
-    canvas.width = window.innerWidth;
+    const pageWidth = document.documentElement.clientWidth || window.innerWidth;
     const navbar = document.getElementById('navbar');
     const navbarHeight = navbar ? navbar.offsetHeight : 0;
-    const pageHeight = Math.max(document.body.scrollHeight, window.innerHeight);
-    canvas.height = pageHeight - navbarHeight;
+    const pageContent = document.querySelector('.container');
+    const firstSection = pageContent?.querySelector('.page__section');
+    const contentBottom = pageContent
+        ? pageContent.getBoundingClientRect().bottom + window.scrollY
+        : document.body.scrollHeight;
+    const firstSectionTop = firstSection
+        ? firstSection.getBoundingClientRect().top + window.scrollY
+        : navbarHeight;
+    const bottomGap = Math.max(0, firstSectionTop - navbarHeight);
+    const canvasHeight = Math.max(0, contentBottom + bottomGap - navbarHeight);
+
+    canvas.style.top = `${navbarHeight}px`;
+    canvas.style.width = `${pageWidth}px`;
+    canvas.style.height = `${canvasHeight}px`;
+    canvas.width = pageWidth;
+    canvas.height = canvasHeight;
     init();
 }
 
 window.addEventListener('resize', () => {
     resizeCanvas();
 });
+
+const pageResizeObserver = new ResizeObserver(resizeCanvas);
+pageResizeObserver.observe(document.querySelector('.container') || document.body);
