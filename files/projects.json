@@ -30,13 +30,15 @@
     "github": "https://github.com/ImBubbles/MyMixer"
   },
   {
-    "name": "OSU Hackathon",
+    "name": "2025 OSU Hackathon",
     "tools": [
       "Golang",
       "VueJS",
       "NuxtJS",
       "NestJS",
-      "JavaScript"
+      "Java",
+      "JavaScript",
+      "DNS Configuration"
     ],
     "description": "Created email service titled Crazymail. Pop-up email service including functioning website and emailing using a setup domain name (DNS).",
     "github": "https://github.com/ImBubbles/CrazyMail"
