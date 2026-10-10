@@ -10,14 +10,31 @@
     padding: 10px;
 }
 
+.projects__project__header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
 .projects__project__tools {
     font-size: 0.9rem;
-    margin-left: 0.75rem;
+    margin-left: auto;
+    text-align: right;
 }
 
 .projects__project__description {
     font-size: 1.3rem;
     margin-left: 0.5rem;
+}
+
+.projects__project__bullets {
+    font-size: 0.9rem;
+    margin: 0.2rem 0 0 1.5rem;
+}
+
+.projects__project__bullets li {
+    list-style-type: disc;
 }
 
 .projects__project__links {

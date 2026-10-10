@@ -1,5 +1,25 @@
 [
   {
+    "name": "Home Lab",
+    "tools": [
+      "Linux",
+      "Docker",
+      "Nginx",
+      "UFW",
+      "Jellyfin",
+      "Cloudflare",
+      "DNS"
+    ],
+    "description": "Built and setup home lab, currently hosting this website and some more fun things.",
+    "bullets": [
+      "CPU: AMD Ryzen 5 5500",
+      "Motherboard: MSI B550 A-Pro",
+      "GPU: ASRock Intel Arc A750",
+      "RAM: 64GB",
+      "Case: Fractal Design Meshify 2 XL"
+    ]
+  },
+  {
     "name": "MyMixer",
     "tools": [
       "C++",
@@ -10,28 +30,15 @@
     "github": "https://github.com/ImBubbles/MyMixer"
   },
   {
-    "name": "CrazyMail (OSU Hackathon)",
+    "name": "OSU Hackathon",
     "tools": [
       "Golang",
       "VueJS",
       "NuxtJS",
       "NestJS",
-      "Java",
-      "JavaScript",
-      "DNS Configuration"
+      "JavaScript"
     ],
-    "description": "Pop-up email service including functioning website and emailing using a setup domain name (DNS).",
+    "description": "Created email service titled Crazymail. Pop-up email service including functioning website and emailing using a setup domain name (DNS).",
     "github": "https://github.com/ImBubbles/CrazyMail"
-  },
-  {
-    "name": "GeoFind",
-    "tools": [
-      "Java",
-      "SQLite",
-      "YAML"
-    ],
-    "description": "Easily share location coordinates in-game and also how far away said coordinates are.",
-    "github": "https://github.com/ImBubbles/GeoFind",
-    "spigot": "https://www.spigotmc.org/resources/geofind.101152/"
   }
 ]

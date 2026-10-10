@@ -49,6 +49,18 @@ async function loadProjects() {
 
             item.querySelector('.projects__project__description').textContent = project.description;
 
+            const bullets = item.querySelector('.projects__project__bullets');
+            if (Array.isArray(project.bullets) && project.bullets.length > 0) {
+                for (const bullet of project.bullets) {
+                    const bulletItem = document.createElement('li');
+                    bulletItem.textContent = bullet;
+                    bulletItem.classList.add('projects__project__bullet');
+                    bullets.append(bulletItem);
+                }
+            } else {
+                bullets.remove();
+            }
+
             const github = item.querySelector('.projects__project__github');
             if (project.github) {
                 github.href = project.github;
